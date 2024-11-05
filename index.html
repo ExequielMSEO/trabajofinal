@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exequiel Martinez - CV</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+        .timeline {
+            border-left: 2px solid #dee2e6;
+            padding: 20px 0;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: #0d6efd;
+            border-radius: 50%;
+        }
+        .skill-badge {
+            margin: 5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background-color: #f8f9fa;
+        }
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+        }
+        .nav-link:hover {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center" id="about">
+        <div class="container">
+            <img src="/assets/img/avatar exe.PNG" alt="Exequiel Martinez" class="rounded-circle mb-4" height="200px" width="200px">
+            <h1 class="display-4">Exequiel Sebastian Martinez L.</h1>
+            <p class="lead">Analista de Sistemas, SEO / ASO Especialista, Front-end Developer</p>
+            <div class="mt-4">
+                <a href="mailto:exequielsmartinez@gmail.com" class="btn btn-outline-light me-2">
+                    <i class="fas fa-envelope"></i> Contactar
+                </a>
+                <a href="#portfolio" class="btn btn-primary">
+                    <i class="fas fa-briefcase"></i> Ver Portafolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-5" id="experience">
+        <div class="container">
+            <h2 class="text-center mb-5">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>SEO Consultant</h4>
+                    <p class="text-muted">Raven a Virtus Company | Feb 2023 - Actualidad</p>
+                    <ul class="list-unstyled">
+                        <li>• Implementación de estrategias SEO para sitios web y aplicaciones móviles</li>
+                        <li>• Implementación de GA4, GTM y GSC</li>
+                        <li>• Manejo de proyectos de optimización SEO</li>
+                        <li>• Investigación y análisis de palabras clave</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h4>SEO Manager</h4>
+                    <p class="text-muted">Growth Lab | Oct 2021 - Feb 2023</p>
+                    <ul class="list-unstyled">
+                        <li>• Desarrollo de estrategias SEO para múltiples portales</li>
+                        <li>• Implementación y QA de mejoras SEO</li>
+                        <li>• Análisis y optimización de performance</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h4>SEO Senior Specialist</h4>
+                    <p class="text-muted">iProspect Chile | Ene 2018 - Oct 2019</p>
+                    <ul class="list-unstyled">
+                        <li>• Desarrollo de estrategias SEO y Métricas</li>
+                        <li>• Planes de migración de sitios ecommerce</li>
+                        <li>• Especialista en ASO y Firebase Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-5 bg-light" id="education">
+        <div class="container">
+            <h2 class="text-center mb-5">Educación</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4>Ingeniería Informática</h4>
+                            <p class="text-muted">Instituto Técnologico de Chile | 2016</p>
+                            <p>Egresado en Analista de Sistemas</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Educación Media</h4>
+                            <p class="text-muted">Liceo Andres Bello | 2009</p>
+                            <p>Graduado de enseñanza media Científico – Humanista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5" id="skills">
+        <div class="container">
+            <h2 class="text-center mb-5">Habilidades y Herramientas</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Herramientas SEO</h4>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge bg-primary text-white">MOZ</span>
+                        <span class="skill-badge bg-primary text-white">Screaming Frog</span>
+                        <span class="skill-badge bg-primary text-white">Semrush</span>
+                        <span class="skill-badge bg-primary text-white">AHREFS</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Lenguajes</h4>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge bg-primary text-white">PHP</span>
+                        <span class="skill-badge bg-primary text-white">JavaScript</span>
+                        <span class="skill-badge bg-primary text-white">HTML5</span>
+                        <span class="skill-badge bg-primary text-white">CSS</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>CMS</h4>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge bg-primary text-white">WordPress</span>
+                        <span class="skill-badge bg-primary text-white">Magento</span>
+                        <span class="skill-badge bg-primary text-white">Shopify</span>
+                        <span class="skill-badge bg-primary text-white">Webflow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-5 bg-light" id="portfolio">
+        <div class="container">
+            <h2 class="text-center mb-5">Mi Portafolio</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card position-relative" style="height: 250px;">
+                        <img src="/assets/img/HDI-SEGUROS-COLOR-1 (1).png" class="card-img-top" alt="HDI Seguros" style="height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title centrado-abajo text-center">Construyendo un landing page</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card position-relative" style="height: 250px;">
+                        <img src="/assets/img/Rosen-logo.png" class="card-img-top" alt="Rosen" style="height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title centrado-abajo text-center">Iguana page</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card position-relative" style="height: 250px;">
+                        <img src="/assets/img/Walmartlogo.png" class="card-img-top" alt="Lider/Walmart" style="height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title centrado-abajo text-center" >Cuppon</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card position-relative" style="height: 250px;">
+                        <img src="/assets/img/latamlogo.png" class="card-img-top" alt="LATAM Pass"  style="height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title centrado-abajo text-center">Terminal, Git y Github</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>Exequiel Sebastian Martinez L.</p>
+                    <p>
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Av. Macul 3700, Macul, Región Metropolitana, Chile
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>
+                        <i class="fas fa-phone me-2"></i>
+                        (+56) 931127631
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope me-2"></i>
+                        exequielsmartinez@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
